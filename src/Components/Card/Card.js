@@ -93,6 +93,7 @@ function Card(props) {
           {tasks && tasks?.length > 0 && (
             <p className="card_footer_item">
               <CheckSquare className="card_footer_icon" />
+              {/* {({tasks?.filter((item) => item.completed)?.length} === {tasks?.length}) ? {<CheckSquare className="card_footer_icon_done" />} : {<CheckSquare className="card_footer_icon" />}} */}
               {tasks?.filter((item) => item.completed)?.length}/{tasks?.length}
             </p>
           )}
